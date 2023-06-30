@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #logo {
+            width: 272px;
+            height: 92px;
+            margin-bottom: 20px;
+            background-image: url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
+            background-size: 272px 92px;
+        }
+        #search-bar {
+            margin-bottom: 20px;
+            width: 580px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 0 20px;
+        }
+		#search-bar input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+        }
+        #buttons {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo"></div>
+    <div id="search-bar">
+        <img src="magnifying-glass.png" alt="Search" width="30" height="20">
+        <input type="text">
+        <a href="#"><img src="microphone.png" alt="Voice Search" width="30" height="30"></a>
+        <a href="#"><img src="camera.png" alt="Visual Search" width="30" height="30"></a>
+    </div>
+    <div id="buttons">
+        <input type="submit" value="Google Search">
+        <input type="submit" value="I'm Feeling Lucky">
+    </div>
+</body>
+</html>
